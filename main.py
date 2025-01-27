@@ -74,7 +74,7 @@ def plot_placements(placements, title):
     ax.set_aspect('equal')
     plt.savefig(f"{title}.png")
 
-plot_placements(placements, "Initial Placement (No Overlap)")
+plot_placements(placements, "initial_placement")
 
 # Reinforcement learning placeholder to refine placements
 def reinforcement_learning(G, placements, rectangles):
@@ -91,5 +91,5 @@ def reinforcement_learning(G, placements, rectangles):
     return placements
 
 optimized_placements = reinforcement_learning(G, placements, rectangles)
-plot_placements(optimized_placements, "Optimized Placement (No Overlap)")
+plot_placements(optimized_placements, "optimized_placement")
 
